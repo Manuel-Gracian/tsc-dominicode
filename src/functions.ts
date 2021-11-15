@@ -20,7 +20,7 @@ function Print_Position(position: { lat: number; lenght: number }): void {
     `Latitude and Longitude are: : ${position.lat}, ${position.lenght}`
   );
 }
-
+// comment
 interface iPosition {
   lat: number;
   lenght: number;
