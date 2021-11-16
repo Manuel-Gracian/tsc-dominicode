@@ -1,24 +1,31 @@
-// interface (regla o plantilla)
 interface Book {
   id: number;
   title: string;
   author: string;
-  co_author?: string;
+  coAuthor?: string; // opcional
+  isLoan?: () => void; // metodo o funcion opcional
 }
 
-// objeto implementado la interface
-const book: Book = {
-  id: 1,
-  title: "My title",
-  author: "My Author",
-};
+// le indicamos usara la inteface Books
+const book: Book = { id: 1, title: "my_title", author: "Manuel" };
 
-// array
+// Array
 const books: Book[] = [];
 
-function getBook(): Book {
-  return { id: 1, title: "my title", author: "Manuel" };
+// function
+function Get_Books(): Book {
+  return { id: 1, title: "codificando", author: "uknow" };
 }
 
-const myBook = getBook();
-console.log(myBook.author);
+const my_book = Get_Books();
+
+function Create_Book(book: Book): Book {
+  return book;
+}
+
+const new_book: Book = {
+  id: 2,
+  title: "Alicia in wonderland",
+  author: "uknow",
+};
+Create_Book(new_book);
