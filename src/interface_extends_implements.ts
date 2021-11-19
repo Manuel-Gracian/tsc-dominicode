@@ -13,7 +13,7 @@ interface Customer extends Person {
   country: string;
 }
 
-const empl: Employee = { id: 1245, name: "manuel", department: "development" };
+//const empl: Employee = { id: 1245, name: "manuel", department: "development" };
 const cust: Customer = { id: 1245, name: "manuel", country: "MEX" };
 
 interface Animal {
